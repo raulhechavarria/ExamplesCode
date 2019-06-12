@@ -8,4 +8,10 @@ public class OffRadioState implements RadioState {
         radio.setOn(false);
 	}
 
+	@Override
+	public String getValue() {
+		// TODO Auto-generated method stub
+		return " this is off";
+	}
+
 }

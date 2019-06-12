@@ -1,4 +1,4 @@
-package designPattern;
+package designPattern.singleton;
 
 public class SingletonSampleOnDemandHolder {
 	private SingletonSampleOnDemandHolder() {

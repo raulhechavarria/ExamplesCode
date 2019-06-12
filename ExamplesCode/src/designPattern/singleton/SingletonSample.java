@@ -1,4 +1,4 @@
-package designPattern;
+package designPattern.singleton;
 
 public class SingletonSample {
 	private static SingletonSample instance = null;
