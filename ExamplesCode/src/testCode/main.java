@@ -20,7 +20,12 @@ import org.w3c.dom.ls.LSInput;
 public class main {
 
 	public static void main(String[] args) {
-		System.out.println(division(15, -4));
+		/*int temp = 89;
+		for (int i = 0; i < 1000; i++) {
+			System.out.println(i);
+		}
+		
+		System.out.println(division(15, -4));*/
 
 	}
 
