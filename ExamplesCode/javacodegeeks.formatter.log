@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-08-26T13:33:23</date>
+  <millis>1566840803044</millis>
+  <sequence>0</sequence>
+  <logger>logger.LoggerExample</logger>
+  <level>INFO</level>
+  <class>logger.FormatterExample</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Finnest message: Logger with DEFAULT FORMATTER</message>
+</record>
+Aug 26, 2019 1:33:31 PM logger.FormatterExample main
+FINEST: Finnest message: Logger with SIMPLE FORMATTER
