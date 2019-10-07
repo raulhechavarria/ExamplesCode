@@ -20,6 +20,14 @@
 	<dependencies>
 
 		<dependency>
+			<groupId>ZSDK_ANDROID_API</groupId>
+			<artifactId>ZSDK_ANDROID_API</artifactId>
+			<version>4.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}\lib\ZSDK_ANDROID_API.jar</systemPath>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>4.1.4.RELEASE</version>

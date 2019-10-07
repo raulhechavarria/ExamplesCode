@@ -2,6 +2,8 @@ package designPattern.singleton;
 
 public class SingletonSample {
 	private static SingletonSample instance = null;
+	public static String testStatic;
+	public String testinst; 
 
 	   private SingletonSample() {
 	   }
