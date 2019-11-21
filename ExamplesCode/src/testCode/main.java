@@ -21,7 +21,8 @@ public class main {
 
 	public static void main(String[] args) {
 		
-		
+		TestAbs abs = new TestAbs() {
+		};
 		
 		
 		/*int temp = 89;
