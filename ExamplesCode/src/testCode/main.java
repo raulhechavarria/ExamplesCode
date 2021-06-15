@@ -17,27 +17,25 @@ import javax.print.SimpleDoc;
 
 import org.w3c.dom.ls.LSInput;
 
+import model.Employee;
+
 public class main {
 
 	public static void main(String[] args) {
-		
-		TestAbs abs = new TestAbs() {
-		};
-		
-		
-		/*int temp = 89;
-		for (int i = 0; i < 1000; i++) {
-			System.out.println(i);
-		}
-		
-		System.out.println(division(15, -4));*/
-
+		/*
+		 * System.out.println(Math.ceil(-82.4)); System.out.println(Math.pow(-6, 2));
+		 * 
+		 * 
+		 * int[] a1 = {1,2,3}; int[] a2 = {4,5,6,7}; System.arraycopy(a1, 0, a2, 0,
+		 * a1.length); for (int i = 0; i < a2.length; i++) { System.out.println(a2[i]);
+		 * }
+		 */
 	}
 
-	static  double division(int x,int y){
-		return x/y;
+	static double division(int x, int y) {
+		return x / y;
 	}
-	
+
 	static String[] pressingButtons(String buttons) {
 
 		HashMap<Character, char[]> dict = new HashMap<Character, char[]>();
@@ -67,8 +65,13 @@ public class main {
 		}
 		return resultfinal;
 	}
+	
+	
+	
+	
 
-	private static void helper(String digits, int index, HashMap<Character, char[]> dict, List<String> result, char[] arr) {
+	private static void helper(String digits, int index, HashMap<Character, char[]> dict, List<String> result,
+			char[] arr) {
 		if (index == digits.length()) {
 			result.add(new String(arr));
 			return;
@@ -107,5 +110,85 @@ public class main {
 		return b;
 
 	}
+	
+	public static int CoinsInMaze(int N,int M,int Maze[][]){
+        int result =-404;
+        int count = Maze[0][0];
+		count += coinsrecursive(N, M, Maze, 0, 0, count);
+        //write your Logic here:
+
+        
+        return result;
+    }
+	
+	
+	public static int coinsrecursive(int N,int M,int Maze[][], int postN,int postM, int count){
+	//	for (int i = postN; i < N; i++) {
+		//	for (int j = postM; j < M; j++) {
+				if (Maze[postN + 1][postM] > Maze[postN][postM + 1]) {
+					count += Maze[postN + 1][postM];
+					count += coinsrecursive(N, M, Maze, postN + 1, postM , count); 
+				} else {
+					count += Maze[postN][postM + 1];
+					count += coinsrecursive(N, M, Maze, postN , postM + 1 , count);
+				}
+		//	}
+	//	}
+		return count;
+	}
+	
+	int[] mutateTheArray(int n, int[] a) {
+		int[] b =  new int[n];
+		for (int i = 0; i < n; i++){
+		    //ArrayIndexOutOfBoundsException.
+		    b[i] = ((i - 1) < 0 ? 0: a[i - 1]) + a[i] + ((i + 1) > n-1 ? 0 :a[i + 1]);
+		}
+		return b;
+		}
+	
+	int countTinyPairs(int[] a, int[] b, int k) {
+		int count = 0;
+		for (int i = 0; i < a.length; i++) {
+			String tiny = String.valueOf(a[i]) + String.valueOf(b[a.length -1 - i]);
+			int t = Integer.valueOf(tiny);
+			if (k > t) {
+				count++;
+			}
+		}
+		return count;
+	}
+
+	
+	
+	static String mergeStrings(String s1, String s2) {
+		String result = "";
+		int len =(s1.length() > s2.length()?s1.length():s2.length());
+		for (int i = 0; i < len; i++) {
+			Character cs1; 
+			if (i < s1.length()) {
+				cs1 = s1.charAt(i);	
+			} else {
+				cs1 = 'z';
+
+			}
+			Character cs2 ;
+			if (i < s2.length()) {
+				cs2 = s2.charAt(i);	
+			} else {
+				cs2 = 'z';
+
+			}			 
+			if (cs1.isMirrored(cs2)) {
+				result += cs1; 
+			} else {
+				result += cs2;
+			}
+			
+		}
+		return result;
+		
+		
+	}
+	
 
 }

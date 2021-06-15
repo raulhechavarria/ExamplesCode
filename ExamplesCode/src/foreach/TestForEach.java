@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import designPattern.chain.of.responsability.Chain;
+import designPattern.behavioral.chain.of.responsability.Chain;
 
 public class TestForEach {
 

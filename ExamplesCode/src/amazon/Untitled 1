@@ -1,0 +1,31 @@
+How big is the size of the input? 
+The maximum number of characters allowed in the <input> element. Default value is 524288
+
+How big is the range of values?
+byte 1 byte  -128 to 127
+short 2 bytes  -32,768 to 32,767
+int 4 bytes -2,147,483,648 to 2,147,483,647
+long 8 bytes -9,223,372,036,854,775,808 to 9,223,372,036,854,775,80
+float 4 bytes 7 decimal digits
+double 8 bytes 16 decimal digits
+
+What kind of values are there?
+javascript
+undefined, number,bigint, boolean, string, symbol, object function
+typescript
+number, any, string, boolean, enum, void, null, undefined, never, array, tuple
+java
+int, boolean, string, object, enum, float, byte , short, double 
+
+Are there negative numbers?
+yes
+
+Floating points?
+values   negatives
+
+Will there be empty inputs?
+yes, could be 
+
+If you are given a dictionary of words, is it a list of strings or a tree?
+depent wich implementent  diccionary Map interfaces (TreeMap or  HashMap)
+

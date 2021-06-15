@@ -6,8 +6,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import javax.xml.ws.*;
-
 public class Labelary {
 
 	private Collection<String> list =  Arrays.asList("abC", "Long Mixed", "SHORT");;

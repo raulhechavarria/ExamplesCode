@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>testCode</groupId>
@@ -19,14 +20,18 @@
 	</build>
 	<dependencies>
 
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
 		<dependency>
-			<groupId>ZSDK_ANDROID_API</groupId>
-			<artifactId>ZSDK_ANDROID_API</artifactId>
-			<version>4.0</version>
-			<scope>system</scope>
-			<systemPath>${basedir}\lib\ZSDK_ANDROID_API.jar</systemPath>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>3.0.2.RELEASE</version>
 		</dependency>
 
+
+
+		<!-- <dependency> <groupId>ZSDK_ANDROID_API</groupId> <artifactId>ZSDK_ANDROID_API</artifactId> 
+			<version>4.0</version> <scope>system</scope> <systemPath>${basedir}\lib\ZSDK_ANDROID_API.jar</systemPath> 
+			</dependency> -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -71,6 +76,8 @@
 			<artifactId>fontbox</artifactId>
 			<version>1.2.1</version>
 		</dependency>
+
+
 
 
 	</dependencies>

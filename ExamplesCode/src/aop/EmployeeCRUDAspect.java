@@ -10,6 +10,7 @@ public class EmployeeCRUDAspect {
 	@Before("execution(* aop.EmployeeManager.getEmployeeById(..))")         //point-cut expression
     public void logBeforeV1(JoinPoint joinPoint)
     {
+		int i = 0;
         System.out.println("EmployeeCRUDAspect.logBeforeV1() : " + joinPoint.getSignature().getName());
     }
 	
